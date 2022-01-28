@@ -32,6 +32,10 @@ module.exports = {
     ],
     'react-hooks/rules-of-hooks': 'error',
     'react-hooks/exhaustive-deps': 'warn',
+    'react/function-component-definition': [
+      2,
+      { namedComponents: 'arrow-function' },
+    ],
     'import/extensions': [
       'error',
       'ignorePackages',
@@ -42,6 +46,7 @@ module.exports = {
         tsx: 'never',
       },
     ],
+    'func-style': ['error', 'declaration', { allowArrowFunctions: true }],
   },
   settings: {
     'import/resolver': {
